@@ -22,7 +22,7 @@ public class OOP{
     System.out.println("Do you want to update grade? ");
     String answer = scanner.nextLine();
 
-        if (answer.equals("yes")) {
+        if (answer.equalsIgnoreCase("yes")) {
 
             System.out.println("Enter new grade: ");
             double newGrade = scanner.nextDouble();
@@ -33,7 +33,7 @@ public class OOP{
             student.displayInfo();
             
         } else {
-            System.out.println(grade);
+            System.out.println("Grade was not updated.");
 
             
         }
